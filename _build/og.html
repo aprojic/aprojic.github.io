@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:"Space Grotesk";src:url("../fonts/space-grotesk.woff2") format("woff2");font-weight:300 700}
+@font-face{font-family:"Inter";src:url("../fonts/inter.woff2") format("woff2");font-weight:100 900}
+html,body{margin:0;background:#111}
+#og{position:relative;width:1200px;height:630px;overflow:hidden;background:#0E1116;color:#F4F5F7;font-family:"Inter",sans-serif}
+svg{position:absolute;inset:0}
+.idle{fill:none;stroke:#252B34;stroke-width:1.5}.run{fill:#1A1F27;stroke:#353D48;stroke-width:1.5}.dot{fill:#5E6672}
+.wall{fill:none;stroke:#F2B705;stroke-width:3}.held{fill:#1A1F27;stroke:#F2B705;stroke-width:1.5}.agent{fill:#F2B705}
+.t{position:absolute;left:72px;bottom:72px}
+h1{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:118px;line-height:.9;letter-spacing:-.035em;margin:0}
+.r{width:64px;height:5px;background:#F2B705;margin:30px 0 22px}
+p{margin:0;font-size:30px;color:#C3C9D1}p b{color:#F4F5F7;font-weight:600}
+</style></head><body><div id="og"><svg viewBox="0 0 1200 630" id="s"></svg>
+<div class="t"><h1>Ante Projić</h1><div class="r"></div><p><b>CISO at Daytona.</b> Securing AI agents in isolated sandboxes.</p></div></div>
+<script>
+const s=document.getElementById('s'),N='http://www.w3.org/2000/svg';let seed=11;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+const add=(t,a)=>{const e=document.createElementNS(N,t);for(const k in a)e.setAttribute(k,a[k]);s.appendChild(e)};
+const c=40,g=12,st=c+g;for(let r=0;r<13;r++)for(let k=0;k<24;k++){const x=k*st+6,y=r*st+6;if(k===17&&r===3)continue;if(x<900&&y>250)continue;
+const run=rnd()>.83;add('rect',{x,y,width:c,height:c,class:run?'run':'idle'});if(run)add('circle',{cx:x+c/2,cy:y+c/2,r:3.5,class:'dot'})}
+const hx=17*st+6,hy=3*st+6;add('rect',{x:hx-6,y:hy-6,width:c+12,height:c+12,class:'wall'});add('rect',{x:hx,y:hy,width:c,height:c,class:'held'});add('circle',{cx:hx+c-10,cy:hy+c/2,r:5,class:'agent'});
+</script></body></html>
