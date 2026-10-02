@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aprojic.github.io/sitemap.xml
