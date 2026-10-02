@@ -85,7 +85,6 @@ section.body{padding-block:clamp(3.5rem,8vw,6rem)}
 h2{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:1.85rem;line-height:1.2;letter-spacing:-.01em;margin:0}
 h2{margin-bottom:1.4rem}
 .lede{max-width:40rem;margin:0 0 2.5rem;font-size:1.25rem;line-height:1.55}
-.body.alt{border-top:1px solid var(--line)}
 .work{list-style:none;margin:0;padding:0;max-width:54rem}
 .work li{display:grid;grid-template-columns:1.6rem 1fr auto;column-gap:.9rem;padding:1.15rem 0;border-top:1px solid var(--line)}
 .work li:last-child{border-bottom:1px solid var(--line)}
@@ -108,7 +107,7 @@ dt,dd{margin:0;padding:.9rem 0;border-top:1px solid var(--line)}
 dt{color:var(--sub);font-size:.95rem}
 dd ul{margin:0;padding:0;list-style:none}
 dd li+li{margin-top:.2rem}
-.term{border-top:1px solid var(--line)}
+
 .term .wrap{padding-block:clamp(2.75rem,6vw,4.25rem)}
 .links{display:flex;flex-wrap:wrap;gap:.6rem 1.75rem;margin:0;font:500 clamp(1rem,1.7vw,1.1rem)/1.6 "Inter",sans-serif}
 
